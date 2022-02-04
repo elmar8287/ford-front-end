@@ -67,9 +67,6 @@ function App() {
               </div>
             </div>
             <div className="nav_modal-body">
-              <div className="mobile_logo_div">
-                <img src={logo} alt="Logo" className="mobile_logo" />
-              </div>
               <nav>
                 <ul className="nav_ul">
                   <li className="nav_li">
