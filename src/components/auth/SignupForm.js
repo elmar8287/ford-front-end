@@ -18,7 +18,7 @@ class SignupForm extends Component {
   }
 
   register = async () => {
-    await axios.post('http://localhost:3000/v1/signup', this.state)
+    await axios.post('http://localhost:3000/users/signup', this.state)
       .then((response) => response)
       .then((response) => {
         console.log(response.data.message)
