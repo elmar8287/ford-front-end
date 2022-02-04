@@ -14,9 +14,9 @@ import ReserveList from './components/reserve/Reserve_list';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
 import Logout from './components/auth/Logout';
-import Signup from './components/auth/signup/Signup';
+import Signup from './components/auth/Signup';
 import CarDetail from './components/car_detail/CarDetail';
-import { isConnect } from './Session';
+import { isConnect } from './Sessions';
 
 function App() {
   const [sidenav, setSidenav] = useState(true);
