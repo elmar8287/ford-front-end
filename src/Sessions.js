@@ -7,7 +7,7 @@ export const isConnect = async () => {
   if (localStorage.getItem('token') != null) {
     token = localStorage.getItem('token');
   }
-  await axios.get('http://localhost:3000/v1/users', {
+  await axios.get('http://127.0.0.1:3000/api/v1/cars', {
     headers: {
       authorization: token,
     },

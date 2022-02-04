@@ -10,13 +10,15 @@ import axios from 'axios';
 class SignupForm extends Component {
   state = {
     user: {
+      name: '',
       email: '',
       password: '',
+      password_confirmation: '',
     },
   }
 
   register = async () => {
-    await axios.post('http://localhost:3000/v1/signup', this.state)
+    await axios.post('http://localhost:3000/users/signup', this.state)
       .then((response) => response)
       .then((response) => {
         console.log(response.data.message)
@@ -48,11 +50,17 @@ class SignupForm extends Component {
           <div className = "login-title">
             <h1>Register</h1>
             <div className="login-content">
+            <div className="input-field">
+                  <input type="text" className="form-control" placeholder='name' name="name" onChange={this.handleChange} />
+              </div>
               <div className="input-field">
                   <input type="email" className="form-control" placeholder='email' name="email" onChange={this.handleChange} />
               </div>
               <div className="input-field">
                 <input type="password" className="form-control" placeholder='password' name="password" onChange={this.handleChange} />
+              </div>
+              <div className="input-field">
+                <input type="password" className="form-control" placeholder='confirm password' name="password_confirmation" onChange={this.handleChange} />
               </div>
               <div className="action">
                 <Link className="to-register-button log-b" to="/login">Go to Login</Link>
