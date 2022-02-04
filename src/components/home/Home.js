@@ -5,7 +5,7 @@ import axios from 'axios';
 import { models } from '../../redux/modelReducer';
 import { oneCar } from '../../redux/oneCarReducer';
 import style from './model.module.css';
-import { goBack } from '../../Session';
+import { goBack } from '../../Sessions';
 
 import Car from './Car';
 
