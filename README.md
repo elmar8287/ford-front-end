@@ -2,7 +2,7 @@
 ## The Front-end for Final Capstone Project
 
 - This app is a Front-end side of final capstone project. You can find the Back-end app [here](https://github.com/Kossi-stack/final-capstone-project/tree/setup). 
-- Direct link to [Kanban board](https://github.com/Kossi-stack/final-capstone-project/projects/1) for whole capstone project
+- Direct link to [Kanban board](https://github.com/Kossi-stack/appointment-back-end/projects/1) for whole capstone project
 
 You can find the design on [Figma](https://www.figma.com/file/yhiRC0w1XxRU2M5LNSkqCH/Ford?node-id=0%3A1)
 

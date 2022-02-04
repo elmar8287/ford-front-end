@@ -61,10 +61,6 @@ function App() {
         <div className="nav_modal-background">
           <div className="nav_modal">
             <div className="nav_modal-header">
-              <h2 className="nav_modal-title">Menu</h2>
-              <div className="X">
-                <p>X</p>
-              </div>
             </div>
             <div className="nav_modal-body">
               <nav>
