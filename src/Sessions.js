@@ -7,7 +7,7 @@ export const isConnect = async () => {
   if (localStorage.getItem('token') != null) {
     token = localStorage.getItem('token');
   }
-  await axios.get('http://carhubackend.herokuapp.com/member-data', {
+  await axios.get('http://localhost:3000/v1/users', {
     headers: {
       authorization: token,
     },
@@ -52,7 +52,7 @@ export const sessionDestroy = async () => {
   if (token === null) {
     token = '';
   }
-  await axios.delete('http://carhubackend.herokuapp.com/users/sign_out', {
+  await axios.delete('http://localhost:3000/v1/users', {
     headers: {
       authorization: token,
     },

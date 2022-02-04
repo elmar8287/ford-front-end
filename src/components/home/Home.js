@@ -9,7 +9,7 @@ import { goBack } from '../../Sessions';
 
 import Car from './Car';
 
-const modelsUrl = 'https://whispering-temple-38914.herokuapp.com/v1/industries/1/';
+const modelsUrl = 'http://localhost:3000/v1/cars';
 
 const Home = () => {
   const stateModel = useSelector((state) => state.myModels);
@@ -44,7 +44,7 @@ const Home = () => {
   };
 
   const selectCar = (id) => {
-    fetch(`https://whispering-temple-38914.herokuapp.com/v1/industries/1/cars/${id}`).then((data) => {
+    fetch(`http://localhost:3000/v1/cars/${id}`).then((data) => {
       data.json().then((dataJson) => dispatch(oneCar(dataJson)));
     });
   };

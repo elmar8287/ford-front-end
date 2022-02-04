@@ -17,7 +17,7 @@ class Login extends Component {
   }
 
   connect = async () => {
-    await axios.post('http://localhost:3000/v1/log_in', this.state)
+    await axios.post('http://localhost:3000/v1/login', this.state)
       .then((response) => response)
       .then((response) => {
         localStorage.setItem('token', response.headers.authorization);

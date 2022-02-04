@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../login.css'
+import './login.css'
 import axios from 'axios';
 class SignupForm extends Component {
   state = {
@@ -16,7 +16,7 @@ class SignupForm extends Component {
   }
 
   register = async () => {
-    await axios.post('http://localhost:3000/v1/sign_up', this.state)
+    await axios.post('http://localhost:3000/v1/signup', this.state)
       .then((response) => response)
       .then((response) => {
         console.log(response.data.message)
