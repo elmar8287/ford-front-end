@@ -60,8 +60,6 @@ function App() {
       <Router>
         <div className="nav_modal-background">
           <div className="nav_modal">
-            <div className="nav_modal-header">
-            </div>
             <div className="nav_modal-body">
               <nav>
                 <ul className="nav_ul">
