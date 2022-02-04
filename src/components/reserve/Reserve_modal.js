@@ -14,7 +14,7 @@ const ReserveModal = () => {
       date: fdate,
       country: fcountry,
     };
-    fetch('https://whispering-temple-38914.herokuapp.com/v1/appointments', {
+    fetch('http://localhost:3000/v1/appointments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
