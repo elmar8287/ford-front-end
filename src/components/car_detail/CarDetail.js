@@ -2,12 +2,30 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { CaretLeft, CaretRight } from 'react-bootstrap-icons';
 import { NavLink } from 'react-router-dom';
+import './car_detail.css';
+import ReserveModal from '../reserve/Reserve_modal';
 
 const CarDetail = () => {
   const state = useSelector((state) => state.myCar);
+  const reserveModalDisplay = () => {
+    const modal = document.querySelector('.reserve_modal-background');
+    const opener = document.querySelector('#reserve_modal-displayer');
+    const closer = document.querySelector('.X_reserve');
+
+    function closeModal() {
+      modal.style.visibility = 'hidden';
+    }
+
+    function callp() {
+      modal.style.visibility = 'visible';
+    }
+    opener.onclick = callp;
+    closer.onclick = closeModal;
+  };
 
   return (
     <div>
+      <ReserveModal />
       <div className="container_">
         <div className="detail_view">
           <img src={state.image} className="detail_image" alt="car" />
@@ -35,7 +53,7 @@ const CarDetail = () => {
                 {' '}
               </p>
             </div>
-            <button type="button" className="rent_link"id="reserve_modal-displayer">
+            <button type="button" className="rent_link" onClick={reserveModalDisplay} id="reserve_modal-displayer">
               Reserve Car
               <CaretRight size={20} />
             </button>
