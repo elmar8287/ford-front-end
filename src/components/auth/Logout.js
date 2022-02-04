@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useEffect } from 'react';
-import { goBack, sessionDestroy } from '../../Session';
+import { goBack, sessionDestroy } from '../../Sessions';
 
 const Logout = () => {
 
